@@ -1,0 +1,14 @@
+<h1>Login</h1>
+
+<%#POST / SESSIONS => CREATE ACTION OF SESSIONS CONTROLLER %>
+<%= form_with :url => "/sesssions" do |form|%>
+    <p>
+        <%= form.label "email" %>
+        <%= form.text_field "email" %>
+        <%= form.label "password" %>
+        <%= form.password_field "password" %>
+    </p>
+    <p>
+        <%= form.submit "Login" %>
+    </p>
+<% end %>
